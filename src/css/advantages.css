@@ -1,0 +1,130 @@
+.advantages-main {
+  background-color: var(--background-color);
+}
+
+.advantages-points-list {
+}
+
+.advantages-points-list:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.advantages-cirkle {
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgb(255, 255, 255, 0.7);
+  background-color: var(--background-color);
+
+  margin: 0 0 22px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-picture {
+  fill: var(--accent-color);
+
+  /* ЦЕНТРОВКА */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ЗАГОЛОВОК */
+
+.advantages-zagolovok {
+  color: var(--white-color);
+  line-height: 1.22;
+  margin-bottom: 18px;
+}
+
+/* ТЕКСТ */
+
+.advantages-text {
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 1.21;
+
+  /* ГРАНИЦЫ ТЕКСТА */
+  max-width: 308px;
+}
+
+.advantages-text:last-child {
+}
+
+.advantages-linie {
+  visibility: hidden;
+}
+
+/* МЕДИА ПРАВИЛО ДЛЯ ТАБЛЕТКИ................................................................................*/
+
+@media only screen and (min-width: 768px) {
+  .advantages-box-transportation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* ОТСТУП ВТОРОГО ЭЛЕМЕНА ВЛЕВО */
+
+  .advantages-points-list:nth-child(even) {
+    margin-left: 60px;
+  }
+
+  /* ОТСТУП ОТ ВЕРХНЕЙ ГРАНИЦЫ */
+
+  /* УБИРАЕМ ОТСТУП ВНУТРИ СПИСКА*/
+
+  .advantages-points-list:last-child {
+    padding-top: 0;
+    padding-bottom: 35px;
+  }
+
+  /* ДЕЛАЕМ НИЖНИЙ ОТСТУП ДЛЯ НИЖНЕГО ЭЛЕМЕНТА */
+
+  .advantages-linie {
+    visibility: hidden;
+  }
+
+  .section {
+    padding-bottom: 0;
+  }
+}
+.advantages-color-wallp {
+  padding: 50px 32px;
+}
+
+/* МЕДИА ПРАВИЛО ДЛЯ ДЕСКТОПА...............................................................................*/
+
+@media only screen and (min-width: 1200px) {
+  .advantages-color-wallp {
+    padding: 50px;
+  }
+  .advantages-points-list {
+    margin-left: 18px;
+    position: relative;
+  }
+
+  /* ПОЛОСКА */
+
+  .advantages-linie {
+    height: 124px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: inherit;
+  }
+
+  .advantages-points-list:nth-child(even) {
+    margin-left: 70px;
+  }
+
+  .advantages-points-list:last-child {
+    margin-left: 70px;
+  }
+}
